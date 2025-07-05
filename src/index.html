@@ -40,6 +40,53 @@
         }
     </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.95);
+            color: white;
+            padding: 1rem;
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .cookie-banner.show {
+            transform: translateY(0);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1001;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 2rem;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover {
+            color: #000;
+        }
+    </style>
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
@@ -276,7 +323,169 @@
         </div>
     </footer>
 
+    <!-- Cookie Consent Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex-1">
+                    <p class="text-sm">
+                        Ez a weboldal sütiket használ a jobb felhasználói élmény érdekében és weboldalunk látogatottságának mérésére. 
+                        <button id="showCookiePolicy" class="underline hover:text-orange-400 transition duration-300">
+                            További információ a sütikről
+                        </button>
+                    </p>
+                </div>
+                <div class="flex gap-2">
+                    <button id="acceptCookies" class="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded text-sm font-medium transition duration-300">
+                        Elfogadom
+                    </button>
+                    <button id="rejectCookies" class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded text-sm font-medium transition duration-300">
+                        Elutasítom
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Policy Modal -->
+    <div id="cookiePolicyModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeCookieModal">&times;</span>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Süti Szabályzat</h2>
+            
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Mi az a süti?</h3>
+            <p class="text-gray-600 mb-4">
+                A sütik (cookies) kis szöveges fájlok, amelyeket a weboldal az Ön böngészőjében tárol. 
+                Ezek segítenek nekünk a weboldal működésének javításában és a látogatói élmény személyre szabásában.
+            </p>
+
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Milyen sütiket használunk?</h3>
+            
+            <h4 class="font-semibold text-gray-800 mb-1">Analitikai sütik</h4>
+            <p class="text-gray-600 mb-3">
+                Matomo Analytics segítségével mérjük weboldalunk látogatottságát és használatát. 
+                Ezek a sütik névtelen statisztikákat gyűjtenek arról, hogy a látogatók hogyan használják weboldalunkat.
+            </p>
+
+            <h4 class="font-semibold text-gray-800 mb-1">Funkcionális sütik</h4>
+            <p class="text-gray-600 mb-4">
+                Ezek a sütik tárolják az Ön süti preferenciáit, hogy ne kelljen minden látogatáskor újra eldöntenie.
+            </p>
+
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Hogyan kezeljük az adatokat?</h3>
+            <p class="text-gray-600 mb-4">
+                Az analitikai adatokat saját szerverünkön tároljuk, nem osztjuk meg harmadik felekkel. 
+                Az adatok névtelenek és csak statisztikai célokra használjuk őket.
+            </p>
+
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Süti beállítások módosítása</h3>
+            <p class="text-gray-600 mb-4">
+                Bármikor módosíthatja süti beállításait böngészője beállításaiban, vagy törölheti a már tárolt sütiket.
+            </p>
+
+            <div class="flex gap-2 mt-6">
+                <button id="acceptCookiesModal" class="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded font-medium transition duration-300">
+                    Elfogadom
+                </button>
+                <button id="rejectCookiesModal" class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded font-medium transition duration-300">
+                    Elutasítom
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script>
+        // Cookie consent management
+        const COOKIE_CONSENT_KEY = 'klimafox_cookie_consent';
+        
+        function getCookieConsent() {
+            return localStorage.getItem(COOKIE_CONSENT_KEY);
+        }
+        
+        function setCookieConsent(consent) {
+            localStorage.setItem(COOKIE_CONSENT_KEY, consent);
+        }
+        
+        function loadMatomo() {
+            if (getCookieConsent() === 'accepted') {
+                // Matomo tracking code
+                var _paq = window._paq = window._paq || [];
+                _paq.push(['trackPageView']);
+                _paq.push(['enableLinkTracking']);
+                (function() {
+                    var u="//analytics.valq.hu/";
+                    _paq.push(['setTrackerUrl', u+'matomo.php']);
+                    _paq.push(['setSiteId', '8']);
+                    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+                })();
+            }
+        }
+        
+        function showCookieBanner() {
+            const banner = document.getElementById('cookieBanner');
+            banner.classList.add('show');
+        }
+        
+        function hideCookieBanner() {
+            const banner = document.getElementById('cookieBanner');
+            banner.classList.remove('show');
+        }
+        
+        function acceptCookies() {
+            setCookieConsent('accepted');
+            hideCookieBanner();
+            loadMatomo();
+        }
+        
+        function rejectCookies() {
+            setCookieConsent('rejected');
+            hideCookieBanner();
+        }
+        
+        function showCookieModal() {
+            document.getElementById('cookiePolicyModal').style.display = 'block';
+        }
+        
+        function hideCookieModal() {
+            document.getElementById('cookiePolicyModal').style.display = 'none';
+        }
+        
+        // Initialize cookie consent
+        document.addEventListener('DOMContentLoaded', function() {
+            const consent = getCookieConsent();
+            
+            if (!consent) {
+                // Show banner if no consent decision has been made
+                showCookieBanner();
+            } else if (consent === 'accepted') {
+                // Load Matomo if previously accepted
+                loadMatomo();
+            }
+            
+            // Event listeners
+            document.getElementById('acceptCookies').addEventListener('click', acceptCookies);
+            document.getElementById('rejectCookies').addEventListener('click', rejectCookies);
+            document.getElementById('showCookiePolicy').addEventListener('click', showCookieModal);
+            document.getElementById('closeCookieModal').addEventListener('click', hideCookieModal);
+            document.getElementById('acceptCookiesModal').addEventListener('click', function() {
+                acceptCookies();
+                hideCookieModal();
+            });
+            document.getElementById('rejectCookiesModal').addEventListener('click', function() {
+                rejectCookies();
+                hideCookieModal();
+            });
+            
+            // Close modal when clicking outside
+            window.addEventListener('click', function(event) {
+                const modal = document.getElementById('cookiePolicyModal');
+                if (event.target === modal) {
+                    hideCookieModal();
+                }
+            });
+        });
+
         // Set current year in footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
