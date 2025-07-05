@@ -407,8 +407,9 @@
         }
         
         function loadMatomo() {
-            if (getCookieConsent() === 'accepted') {
-                // Matomo tracking code
+            const consent = getCookieConsent();
+            if (consent !== 'rejected') {
+                // Matomo tracking code - enabled by default unless explicitly rejected
                 var _paq = window._paq = window._paq || [];
                 _paq.push(['trackPageView']);
                 _paq.push(['enableLinkTracking']);
@@ -458,8 +459,10 @@
             if (!consent) {
                 // Show banner if no consent decision has been made
                 showCookieBanner();
-            } else if (consent === 'accepted') {
-                // Load Matomo if previously accepted
+                // Load Matomo by default (before user makes a choice)
+                loadMatomo();
+            } else {
+                // Load Matomo unless explicitly rejected
                 loadMatomo();
             }
             
