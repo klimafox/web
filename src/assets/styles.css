@@ -213,17 +213,7 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .carousel-arrow {
-        width: 40px;
-        height: 40px;
-        font-size: 14px;
-    }
-    
-    .carousel-arrow.prev {
-        left: 10px;
-    }
-    
-    .carousel-arrow.next {
-        right: 10px;
+        display: none;
     }
     
     .gallery-grid {
