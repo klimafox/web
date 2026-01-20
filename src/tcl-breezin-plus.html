@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCL Breezin Plus 5kW - KlímaFox</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-orange-600 font-bold text-lg hover:text-orange-700 transition">
+                <i class="fas fa-arrow-left mr-2"></i> Vissza a főoldalra
+            </a>
+            <div class="text-gray-800 font-black tracking-tighter text-xl">KLÍMA<span class="text-orange-500">FOX</span></div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-8 md:py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 bg-white p-4 md:p-10 rounded-3xl shadow-xl border border-gray-100">
+            
+            <div class="space-y-4">
+                <div class="relative rounded-2xl overflow-hidden bg-gray-50 aspect-[4/3] border border-gray-100 shadow-inner">
+                    <img id="mainImage" src="assets/brzinp1.jpg" alt="TCL Breezin Plus" class="w-full h-full object-contain p-4 transition duration-500">
+                </div>
+                <div class="grid grid-cols-3 gap-3" id="thumbnails">
+                    <img src="assets/brzinp1.jpg" onclick="changeImage(this.src, this)" class="cursor-pointer rounded-xl border-2 border-orange-500 p-1 hover:opacity-80 transition bg-white">
+                    <img src="assets/brzinp2.jpg" onclick="changeImage(this.src, this)" class="cursor-pointer rounded-xl border-2 border-transparent p-1 hover:border-orange-500 transition bg-white">
+                    <img src="assets/brzinp3.jpg" onclick="changeImage(this.src, this)" class="cursor-pointer rounded-xl border-2 border-transparent p-1 hover:border-orange-500 transition bg-white">
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <div class="bg-gray-50 p-4 rounded-2xl mb-6 flex justify-between items-center border border-gray-100">
+                    <div>
+                        <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Érdeklődés / Árajánlat:</p>
+                        <a href="tel:+36305317007" class="text-gray-900 font-black text-lg hover:text-orange-600 transition">+36 30 531 7007</a>
+                    </div>
+                    <div class="text-right">
+                        <a href="mailto:info@klimafox.hu" class="block text-orange-600 font-bold hover:underline text-sm">info@klimafox.hu</a>
+                    </div>
+                </div>
+
+                <h1 class="text-4xl font-black text-gray-900 leading-tight mb-2">TCL BreezeIN Plus 5kW</h1>
+                <p class="text-gray-400 text-sm mb-4 font-medium italic">Modell: TAC-12CHSD/</p>
+                
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase">Szél nélküli hűtés</span>
+                    <span class="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full italic uppercase">5 Év Garancia</span>
+                </div>
+
+                <div class="mb-8 p-6 bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl text-white shadow-xl relative overflow-hidden border-b-4 border-orange-500">
+                    <div class="absolute -top-1 -right-1 bg-orange-500 text-white text-[10px] font-black px-6 py-2 uppercase rotate-12 shadow-lg">AKCIÓ</div>
+                    <p class="text-gray-400 line-through text-xl mb-1 opacity-60">299.000 Ft</p>
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-5xl font-black text-orange-400 tracking-tighter">265.000 Ft</span>
+                    </div>
+                    <p class="text-[10px] text-gray-400 mt-3 uppercase tracking-widest font-bold">Bruttó készülékár</p>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Főbb jellemzők:</h3>
+                    <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-xs text-gray-600">
+                        <div class="flex items-center"><i class="fas fa-check text-orange-500 mr-2"></i> Gentle Breeze</div>
+                        <div class="flex items-center"><i class="fas fa-check text-orange-500 mr-2"></i> IOT WIFI vezérlés</div>
+                        <div class="flex items-center"><i class="fas fa-check text-orange-500 mr-2"></i> Deep Clean öntisztítás</div>
+                        <div class="flex items-center"><i class="fas fa-check text-orange-500 mr-2"></i> Csepptálca fűtés (-20°)</div>
+                        <div class="flex items-center"><i class="fas fa-check text-orange-500 mr-2"></i> 3D légáramlás</div>
+                        <div class="flex items-center"><i class="fas fa-check text-orange-500 mr-2"></i> Eco üzemmód</div>
+                    </div>
+                </div>
+
+                <div class="space-y-1">
+                    <div class="grid grid-cols-2 p-3 bg-gray-50 rounded-lg text-sm">
+                        <span class="text-gray-500">Hűtő / Fűtő teljesítmény</span>
+                        <span class="text-gray-900 font-bold text-right">5,1 kW / 5,1 kW</span>
+                    </div>
+                    <div class="grid grid-cols-2 p-3 text-sm">
+                        <span class="text-gray-500">Energiaosztály (H/F)</span>
+                        <span class="text-gray-900 font-bold text-right">A++ / A+</span>
+                    </div>
+                    <div class="grid grid-cols-2 p-3 bg-gray-50 rounded-lg text-sm">
+                        <span class="text-gray-500">SEER / SCOP</span>
+                        <span class="text-gray-900 font-bold text-right">6,1 / 4,0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 bg-white p-6 md:p-10 rounded-3xl shadow-lg border border-gray-100">
+            <h3 class="text-2xl font-black text-gray-900 mb-8 uppercase tracking-tight">Műszaki specifikáció</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-4 text-sm">
+                <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Beltéri szélesség</span><span class="font-bold">920 mm</span></div>
+                <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Beltéri magasság</span><span class="font-bold">306 mm</span></div>
+                <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Kültéri szélesség</span><span class="font-bold">853 mm</span></div>
+                <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Beltéri súly</span><span class="font-bold">12,5 kg</span></div>
+                <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Kültéri súly</span><span class="font-bold">33 kg</span></div>
+                <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Műk. tartomány (Hűtés)</span><span class="font-bold">+15 .. +53 °C</span></div>
+                <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Műk. tartomány (Fűtés)</span><span class="font-bold">-20 .. +24 °C</span></div>
+                <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Csőméret (foly/gőz)</span><span class="font-bold">1/4" - 3/8"</span></div>
+                <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Max. csövezési táv</span><span class="font-bold">25 m</span></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function changeImage(src, element) {
+            document.getElementById('mainImage').src = src;
+            const thumbs = document.getElementById('thumbnails').getElementsByTagName('img');
+            for (let img of thumbs) {
+                img.classList.remove('border-orange-500');
+                img.classList.add('border-transparent');
+            }
+            element.classList.remove('border-transparent');
+            element.classList.add('border-orange-500');
+        }
+    </script>
+</body>
+</html>

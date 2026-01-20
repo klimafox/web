@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Select 3,5kW - KlímaFox</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-orange-600 font-bold text-lg hover:text-orange-700 transition">
+                <i class="fas fa-arrow-left mr-2"></i> Vissza a főoldalra
+            </a>
+            <div class="text-gray-800 font-black tracking-tighter text-xl text-right uppercase">Klíma<span class="text-orange-500">Fox</span></div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-8 md:py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 bg-white p-4 md:p-10 rounded-3xl shadow-xl border border-gray-100">
+            
+            <div class="space-y-4">
+                <div class="relative rounded-2xl overflow-hidden bg-gray-50 aspect-[4/3] border border-gray-100 shadow-inner">
+                    <img id="mainImage" src="assets/teslasel1.jpg" alt="Tesla Select" class="w-full h-full object-contain p-4 transition duration-500">
+                </div>
+                <div class="grid grid-cols-3 gap-3" id="thumbnails">
+                    <img src="assets/teslasel1.jpg" onclick="changeImage(this.src, this)" class="cursor-pointer rounded-xl border-2 border-orange-500 p-1 hover:opacity-80 transition bg-white shadow-sm">
+                    <img src="assets/teslasel2.jpg" onclick="changeImage(this.src, this)" class="cursor-pointer rounded-xl border-2 border-transparent p-1 hover:border-orange-500 transition bg-white shadow-sm">
+                    <img src="assets/teslasel3.jpg" onclick="changeImage(this.src, this)" class="cursor-pointer rounded-xl border-2 border-transparent p-1 hover:border-orange-500 transition bg-white shadow-sm">
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <div class="bg-orange-50 p-4 rounded-2xl mb-6 flex justify-between items-center border border-orange-100 shadow-sm">
+                    <div>
+                        <p class="text-[10px] uppercase tracking-widest text-orange-700 font-bold">Telepítés és szaktanácsadás:</p>
+                        <a href="tel:+36305317007" class="text-gray-900 font-black text-lg hover:text-orange-600 transition">+36 30 531 7007</a>
+                    </div>
+                    <div class="text-right">
+                        <a href="mailto:info@klimafox.hu" class="block text-orange-600 font-bold hover:underline text-sm tracking-tight">info@klimafox.hu</a>
+                    </div>
+                </div>
+
+                <h1 class="text-3xl md:text-4xl font-black text-gray-900 leading-tight mb-2 uppercase tracking-tighter">Tesla Select 3,5kW</h1>
+                
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="bg-gray-100 text-gray-700 text-[10px] font-bold px-3 py-1 rounded-full uppercase border border-gray-200">WiFi Vezérlés</span>
+                    <span class="bg-blue-100 text-blue-700 text-[10px] font-bold px-3 py-1 rounded-full uppercase border border-blue-200">Kiváló Ár/Érték Arány</span>
+                    <span class="bg-green-100 text-green-700 text-[10px] font-bold px-3 py-1 rounded-full italic uppercase border border-green-200 tracking-tighter">5 Év Garancia Telepítéssel</span>
+                </div>
+
+                <div class="mb-8 p-8 bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl text-white shadow-2xl relative overflow-hidden border-b-4 border-orange-500">
+                    <div class="absolute top-0 right-0 bg-orange-500 text-white text-[10px] font-black px-6 py-1 uppercase rotate-12 translate-x-3 translate-y-3 shadow-md italic">Szezonális Akció</div>
+                    <p class="text-gray-400 line-through text-lg mb-0 opacity-60">254.900 Ft</p>
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-5xl font-black text-white tracking-tighter italic">234.900 Ft</span>
+                    </div>
+                    <p class="text-[10px] text-gray-400 mt-4 uppercase tracking-widest font-bold border-t border-gray-700 pt-3">Bruttó készülékár, készletről azonnal</p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 border-t border-gray-100 pt-6">
+                    <div class="p-3 bg-gray-50 rounded-xl">
+                        <p class="text-[10px] text-gray-400 uppercase font-bold mb-1 italic">Hűtő teljesítmény</p>
+                        <p class="text-gray-900 font-black">3,4 kW</p>
+                    </div>
+                    <div class="p-3 bg-gray-50 rounded-xl">
+                        <p class="text-[10px] text-gray-400 uppercase font-bold mb-1 italic">Fűtő teljesítmény</p>
+                        <p class="text-gray-900 font-black">3,5 kW</p>
+                    </div>
+                    <div class="p-3 bg-gray-50 rounded-xl">
+                        <p class="text-[10px] text-gray-400 uppercase font-bold mb-1 italic">SEER / SCOP</p>
+                        <p class="text-gray-900 font-black">6,2 / 4,0</p>
+                    </div>
+                    <div class="p-3 bg-gray-50 rounded-xl">
+                        <p class="text-[10px] text-gray-400 uppercase font-bold mb-1 italic">WiFi</p>
+                        <p class="text-orange-600 font-black uppercase">Beépítve</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 bg-white p-6 md:p-10 rounded-3xl shadow-lg border border-gray-100">
+            <h3 class="text-2xl font-black text-gray-900 mb-8 uppercase tracking-tighter italic">Műszaki Adatok</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-4 text-sm">
+                <div class="flex justify-between border-b border-gray-50 py-2 items-center"><span class="text-gray-500 font-medium">Típus</span><span class="font-bold">Oldalfali Split Inverter</span></div>
+                <div class="flex justify-between border-b border-gray-50 py-2 items-center"><span class="text-gray-500 font-medium">Működési tartomány (Hűtés)</span><span class="font-bold">16°C - 49°C</span></div>
+                <div class="flex justify-between border-b border-gray-50 py-2 items-center"><span class="text-gray-500 font-medium">Működési tartomány (Fűtés)</span><span class="font-bold text-orange-600">-15°C - 30°C</span></div>
+                <div class="flex justify-between border-b border-gray-100 py-2 items-center"><span class="text-gray-500 font-medium">Beltéri zajszint</span><span class="font-bold">36 - 54 dB(A)</span></div>
+                <div class="flex justify-between border-b border-gray-100 py-2 items-center"><span class="text-gray-500 font-medium">Kültéri zajszint</span><span class="font-bold">61 dB(A)</span></div>
+                <div class="flex justify-between border-b border-gray-100 py-2 items-center"><span class="text-gray-500 font-medium">Garancia</span><span class="font-bold text-green-600 uppercase tracking-tighter italic">5 év (telepítéssel)</span></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function changeImage(src, element) {
+            document.getElementById('mainImage').src = src;
+            const thumbs = document.getElementById('thumbnails').getElementsByTagName('img');
+            for (let img of thumbs) {
+                img.classList.remove('border-orange-500');
+                img.classList.add('border-transparent');
+            }
+            element.classList.remove('border-transparent');
+            element.classList.add('border-orange-500');
+        }
+    </script>
+</body>
+</html>

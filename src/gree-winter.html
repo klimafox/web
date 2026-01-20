@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gree Winter 3,5kW - KlímaFox</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-orange-600 font-bold text-lg hover:text-orange-700 transition">
+                <i class="fas fa-arrow-left mr-2"></i> Vissza a főoldalra
+            </a>
+            <div class="text-gray-800 font-black tracking-tighter text-xl">KLÍMA<span class="text-orange-500">FOX</span></div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-8 md:py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 bg-white p-4 md:p-10 rounded-3xl shadow-xl border border-gray-100">
+            
+            <div class="space-y-4">
+                <div class="relative rounded-2xl overflow-hidden bg-gray-50 aspect-[4/3] border border-gray-100 shadow-inner">
+                    <img id="mainImage" src="assets/winter1.jpg" alt="Gree Winter" class="w-full h-full object-contain p-4 transition duration-500">
+                </div>
+                <div class="grid grid-cols-5 gap-2" id="thumbnails">
+                    <img src="assets/winter1.jpg" onclick="changeImage(this.src, this)" class="cursor-pointer rounded-xl border-2 border-orange-500 p-1 hover:opacity-80 transition bg-white">
+                    <img src="assets/winter2.jpg" onclick="changeImage(this.src, this)" class="cursor-pointer rounded-xl border-2 border-transparent p-1 hover:border-orange-500 transition bg-white">
+                    <img src="assets/winter3.jpg" onclick="changeImage(this.src, this)" class="cursor-pointer rounded-xl border-2 border-transparent p-1 hover:border-orange-500 transition bg-white">
+                    <img src="assets/winter4.jpg" onclick="changeImage(this.src, this)" class="cursor-pointer rounded-xl border-2 border-transparent p-1 hover:border-orange-500 transition bg-white">
+                    <img src="assets/winter5.jpg" onclick="changeImage(this.src, this)" class="cursor-pointer rounded-xl border-2 border-transparent p-1 hover:border-orange-500 transition bg-white">
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <div class="bg-gray-50 p-4 rounded-2xl mb-6 flex justify-between items-center border border-gray-100">
+                    <div>
+                        <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Ajánlatkérésért:</p>
+                        <a href="tel:+36305317007" class="text-gray-900 font-black text-lg hover:text-orange-600 transition">+36 30 531 7007</a>
+                    </div>
+                    <div class="text-right">
+                        <a href="mailto:info@klimafox.hu" class="block text-orange-600 font-bold hover:underline text-sm">info@klimafox.hu</a>
+                    </div>
+                </div>
+
+                <h1 class="text-4xl font-black text-gray-900 leading-tight mb-2">Gree Winter 3,5kW</h1>
+                
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="bg-orange-100 text-orange-700 text-xs font-bold px-3 py-1 rounded-full text-sm">TÉLIESÍTETT MODEL</span>
+                    <span class="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full italic">5 ÉV GARANCIA TELEPÍTÉSSEL</span>
+                </div>
+
+                <div class="mb-8 p-6 bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl text-white shadow-xl relative overflow-hidden">
+                    <div class="absolute -top-1 -right-1 bg-orange-500 text-white text-[10px] font-black px-6 py-2 uppercase rotate-12 shadow-lg">AKCIÓ</div>
+                    <p class="text-gray-400 line-through text-xl mb-1 opacity-60">315.000 Ft</p>
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-5xl font-black text-orange-400 tracking-tighter">285.000 Ft</span>
+                    </div>
+                    <p class="text-[10px] text-gray-400 mt-3 uppercase tracking-widest font-bold border-t border-gray-700 pt-3 text-sm">Bruttó készülékár</p>
+                </div>
+
+                <div class="mb-10">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3 flex items-center">
+                        <span class="w-8 h-1 bg-orange-500 mr-3"></span> Téliesített működés
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        Ezek a modellek kompresszor karter- és csepptálca fűtéssel rendelkeznek, melynek köszönhetően -25°C-os külső hőmérsékletig garantált a fűtés. A kültéri csepptálca fűtés biztosítja, hogy a leolvasztások alkalmával keletkező kondenzvíz ne képezzen jegesedést, megnövelve ezzel az üzembiztonságot télen.
+                    </p>
+                </div>
+
+                <div class="space-y-1">
+                    <div class="grid grid-cols-2 p-3 bg-gray-50 rounded-lg text-sm">
+                        <span class="text-gray-500">Márka / Modell</span>
+                        <span class="text-gray-900 font-bold text-right">Gree Winter</span>
+                    </div>
+                    <div class="grid grid-cols-2 p-3 text-sm">
+                        <span class="text-gray-500">Teljesítmény (Hűtés/Fűtés)</span>
+                        <span class="text-gray-900 font-bold text-right">3,51 kW / 3,81 kW</span>
+                    </div>
+                    <div class="grid grid-cols-2 p-3 bg-gray-50 rounded-lg text-sm">
+                        <span class="text-gray-500">Energiaosztály</span>
+                        <span class="text-gray-900 font-bold text-right text-green-600">A++ / A+</span>
+                    </div>
+                    <div class="grid grid-cols-2 p-3 text-sm">
+                        <span class="text-gray-500">SEER / SCOP</span>
+                        <span class="text-gray-900 font-bold text-right">7,1 / 4,1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 bg-white p-6 md:p-10 rounded-3xl shadow-lg border border-gray-100">
+            <h3 class="text-2xl font-black text-gray-900 mb-8 uppercase tracking-tight">Részletes műszaki adatok</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-4 text-sm">
+                <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Hűtő/Fűtő telj.</span><span class="font-bold">3,51 / 3,81 kW</span></div>
+                <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Beltéri méret</span><span class="font-bold">825x293x196 mm</span></div>
+                <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Beltéri zajszint</span><span class="font-bold">24-41 dB(A)</span></div>
+                <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Kültéri méret</span><span class="font-bold">732x550x330 mm</span></div>
+                <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Kültéri tömeg</span><span class="font-bold">24,5 kg</span></div>
+                <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Műk. tartomány (Fűtés)</span><span class="font-bold">-25..+30 °C</span></div>
+                <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Hűtőközeg</span><span class="font-bold">R32 (0,57 kg)</span></div>
+                <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">H tarifa</span><span class="font-bold text-green-600">IGÉNYELHETŐ</span></div>
+                <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Kiemelt funkciók</span><span class="font-bold text-xs">Wi-Fi, 3D légáram, I FEEL</span></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function changeImage(src, element) {
+            document.getElementById('mainImage').src = src;
+            const thumbs = document.getElementById('thumbnails').getElementsByTagName('img');
+            for (let img of thumbs) {
+                img.classList.remove('border-orange-500');
+                img.classList.add('border-transparent');
+            }
+            element.classList.remove('border-transparent');
+            element.classList.add('border-orange-500');
+        }
+    </script>
+</body>
+</html>

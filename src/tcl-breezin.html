@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCL BreezeIN 3,4kW - KlímaFox</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-orange-600 font-bold text-lg hover:text-orange-700 transition">
+                <i class="fas fa-arrow-left mr-2"></i> Vissza a főoldalra
+            </a>
+            <div class="text-gray-800 font-black tracking-tighter text-xl">KLÍMA<span class="text-orange-500">FOX</span></div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-8 md:py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 bg-white p-4 md:p-10 rounded-3xl shadow-xl border border-gray-100">
+            
+            <div class="space-y-4">
+                <div class="relative rounded-2xl overflow-hidden bg-gray-50 aspect-[4/3] border border-gray-100 shadow-inner">
+                    <img id="mainImage" src="assets/brizin1.jpg" alt="TCL BreezeIN" class="w-full h-full object-contain p-4 transition duration-500">
+                </div>
+                <div class="grid grid-cols-3 gap-3" id="thumbnails">
+                    <img src="assets/brizin1.jpg" onclick="changeImage(this.src, this)" class="cursor-pointer rounded-xl border-2 border-orange-500 p-1 hover:opacity-80 transition bg-white">
+                    <img src="assets/brizin2.jpg" onclick="changeImage(this.src, this)" class="cursor-pointer rounded-xl border-2 border-transparent p-1 hover:border-orange-500 transition bg-white">
+                    <img src="assets/brizin3.jpg" onclick="changeImage(this.src, this)" class="cursor-pointer rounded-xl border-2 border-transparent p-1 hover:border-orange-500 transition bg-white">
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <div class="bg-gray-50 p-4 rounded-2xl mb-6 flex justify-between items-center border border-gray-100">
+                    <div>
+                        <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Árajánlatkérés:</p>
+                        <a href="tel:+36305317007" class="text-gray-900 font-black text-lg hover:text-orange-600 transition">+36 30 531 7007</a>
+                    </div>
+                    <div class="text-right text-xs">
+                        <span class="block text-gray-400">Email:</span>
+                        <a href="mailto:info@klimafox.hu" class="text-orange-600 font-bold hover:underline">info@klimafox.hu</a>
+                    </div>
+                </div>
+
+                <h1 class="text-3xl md:text-4xl font-black text-gray-900 leading-tight mb-2">TCL BreezeIN 3,4kW</h1>
+                <p class="text-gray-500 text-xs mb-4">Oldalfali inverteres klíma (TAC-12CHSD/TPH11IF)</p>
+                
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="bg-orange-50 text-orange-600 text-[10px] font-bold px-3 py-1 rounded-full border border-orange-200">WIFI FUNKCIÓ</span>
+                    <span class="bg-blue-50 text-blue-600 text-[10px] font-bold px-3 py-1 rounded-full border border-blue-200">SZÉL NÉLKÜLI HŰTÉS</span>
+                    <span class="bg-green-50 text-green-600 text-[10px] font-bold px-3 py-1 rounded-full border border-green-200">5 ÉV GARANCIA</span>
+                </div>
+
+                <div class="mb-8 p-6 bg-gray-900 rounded-3xl text-white shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-orange-600 text-white text-[11px] font-black px-4 py-1 -mr-2 mt-4 rotate-45 shadow-md">TOP ÁR</div>
+                    <p class="text-gray-500 line-through text-lg mb-0">289.000 Ft</p>
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-5xl font-black text-white tracking-tighter">249.000 Ft</span>
+                    </div>
+                    <p class="text-[10px] text-orange-500 mt-2 font-bold uppercase tracking-widest italic tracking-wider">Akciós bruttó ár</p>
+                </div>
+
+                <div class="mb-8 grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <div class="flex items-start text-sm text-gray-600">
+                        <i class="fas fa-check-circle text-orange-500 mt-1 mr-2 text-xs"></i> Lágy levegőáramlás
+                    </div>
+                    <div class="flex items-start text-sm text-gray-600">
+                        <i class="fas fa-check-circle text-orange-500 mt-1 mr-2 text-xs"></i> Öntisztító funkció
+                    </div>
+                    <div class="flex items-start text-sm text-gray-600">
+                        <i class="fas fa-check-circle text-orange-500 mt-1 mr-2 text-xs"></i> I Feel & I Set funkció
+                    </div>
+                    <div class="flex items-start text-sm text-gray-600">
+                        <i class="fas fa-check-circle text-orange-500 mt-1 mr-2 text-xs"></i> Gázszivárgás érzékelő
+                    </div>
+                    <div class="flex items-start text-sm text-gray-600">
+                        <i class="fas fa-check-circle text-orange-500 mt-1 mr-2 text-xs"></i> ECO üzemmód
+                    </div>
+                    <div class="flex items-start text-sm text-gray-600">
+                        <i class="fas fa-check-circle text-orange-500 mt-1 mr-2 text-xs"></i> Hűtés -20°C-ig
+                    </div>
+                </div>
+
+                <div class="space-y-2 border-t border-gray-100 pt-6">
+                    <div class="flex justify-between items-center p-2 hover:bg-gray-50 rounded-lg transition">
+                        <span class="text-gray-500 text-sm font-medium">Energiaosztály (Hűtés/Fűtés)</span>
+                        <span class="text-gray-900 font-black text-sm">A++ / A+</span>
+                    </div>
+                    <div class="flex justify-between items-center p-2 hover:bg-gray-50 rounded-lg transition">
+                        <span class="text-gray-500 text-sm font-medium">SEER / SCOP</span>
+                        <span class="text-gray-900 font-black text-sm">6,1 / 4,0</span>
+                    </div>
+                    <div class="flex justify-between items-center p-2 hover:bg-gray-50 rounded-lg transition">
+                        <span class="text-gray-500 text-sm font-medium">Hűtési teljesítmény</span>
+                        <span class="text-gray-900 font-black text-sm">3,4 kW</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function changeImage(src, element) {
+            document.getElementById('mainImage').src = src;
+            const thumbs = document.getElementById('thumbnails').getElementsByTagName('img');
+            for (let img of thumbs) {
+                img.classList.remove('border-orange-500');
+                img.classList.add('border-transparent');
+            }
+            element.classList.remove('border-transparent');
+            element.classList.add('border-orange-500');
+        }
+    </script>
+</body>
+</html>
