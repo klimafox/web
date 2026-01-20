@@ -110,20 +110,21 @@ src="https://www.facebook.com/tr?id=1544076400141318&ev=PageView&noscript=1"
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full z-50">
+ <nav class="bg-white shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <img src="assets/logo.png" alt="KlímaFox Logo" class="h-10 w-auto">
-<!--                    <span class="ml-2 text-xl font-bold text-orange-600">KlímaFox.hu</span>-->
+                    <a href="index.html">
+                        <img src="assets/logo.png" alt="KlímaFox Logo" class="h-10 w-auto">
+                    </a>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#home" class="text-orange-600 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Kezdőlap</a>
-                        <a href="#services" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Szolgáltatások</a>
+                        <a href="index.html#home" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Kezdőlap</a>
+                        <a href="index.html#services" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Szolgáltatások</a>
                         <a href="gallery.html" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Galéria</a>
-                        <a href="#about" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Rólunk</a>
-                        <a href="#contact" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Kapcsolat</a>
+                        <a href="index.html#about" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Rólunk</a>
+                        <a href="index.html#contact" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Kapcsolat</a>
                     </div>
                 </div>
                 <div class="md:hidden">
@@ -132,14 +133,13 @@ src="https://www.facebook.com/tr?id=1544076400141318&ev=PageView&noscript=1"
                     </button>
                 </div>
             </div>
-            <!-- Mobile menu -->
             <div id="mobile-menu" class="md:hidden hidden">
                 <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-                    <a href="#home" class="text-orange-600 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Kezdőlap</a>
-                    <a href="#services" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Szolgáltatások</a>
+                    <a href="index.html#home" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Kezdőlap</a>
+                    <a href="index.html#services" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Szolgáltatások</a>
                     <a href="gallery.html" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Galéria</a>
-                    <a href="#about" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Rólunk</a>
-                    <a href="#contact" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Kapcsolat</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Rólunk</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Kapcsolat</a>
                 </div>
             </div>
         </div>
@@ -668,6 +668,19 @@ src="https://www.facebook.com/tr?id=1544076400141318&ev=PageView&noscript=1"
                 mobileMenu.classList.add('hidden');
             }
         });
+    </script>
+    <script src="assets/scripts.js"></script>
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // A többi kódod (ami a képen is van) jöhet ezután...
     </script>
     <script src="assets/scripts.js"></script>
 </body>
