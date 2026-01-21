@@ -44,9 +44,9 @@
         </div>
     </nav>
 
-    <main class="max-w-7xl mx-auto px-4 py-8 md:py-12">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 bg-white p-4 md:p-10 rounded-3xl shadow-xl border border-gray-100 mb-10">
-            
+    <main class="max-w-7xl mx-auto px-4 py-8 md:py-12 space-y-10">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 bg-white p-4 md:p-10 rounded-3xl shadow-xl border border-gray-100">
             <div class="space-y-4">
                 <div class="relative rounded-2xl overflow-hidden bg-gray-50 aspect-[4/3] border border-gray-100 shadow-inner">
                     <img id="mainImage" src="assets/comfort1.jpg" alt="Gree Winter" class="w-full h-full object-contain p-4 transition duration-500">
@@ -80,7 +80,7 @@
                 </div>
 
                 <div class="mb-8 p-6 bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl text-white shadow-xl relative overflow-hidden">
-                    <div class="absolute -top-1 -right-1 bg-orange-500 text-white text-[10px] font-black px-6 py-2 uppercase rotate-12">AKCIÓ</div>
+                    <div class="absolute -top-1 -right-1 bg-orange-500 text-white text-[10px] font-black px-6 py-2 uppercase rotate-12 shadow-lg">AKCIÓ</div>
                     <p class="text-gray-400 line-through text-xl mb-1 opacity-60">345.000 Ft</p>
                     <div class="flex items-baseline gap-2">
                         <span class="text-5xl font-black text-orange-400 tracking-tighter">295.000 Ft</span>
@@ -126,29 +126,67 @@
             <h3 class="text-2xl font-black text-gray-900 mb-8 uppercase tracking-tight flex items-center">
                 <i class="fas fa-list-ul text-orange-500 mr-4"></i> Részletes műszaki adatok
             </h3>
-            
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-2 text-sm">
                 <div class="space-y-2">
                     <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Márka / Modell</span><span class="font-bold">Gree Winter</span></div>
-                    <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Kivitel</span><span class="font-bold">Magasoldalfali</span></div>
                     <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Hűtőteljesítmény</span><span class="font-bold">3,51 kW</span></div>
                     <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Fűtőteljesítmény</span><span class="font-bold">3,81 kW</span></div>
                 </div>
                 <div class="space-y-2">
                     <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Beltéri méret</span><span class="font-bold">825x293x196 mm</span></div>
                     <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Kültéri méret</span><span class="font-bold">732×550×330 mm</span></div>
-                    <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Energiaosztály</span><span class="font-bold text-green-600">A++ / A+</span></div>
                     <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Hűtőközeg</span><span class="font-bold">R32</span></div>
                 </div>
                 <div class="space-y-2">
-                    <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">SEER / SCOP</span><span class="font-bold">7,1 / 4,1</span></div>
                     <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Csőméret</span><span class="font-bold">6 / 10 mm</span></div>
                     <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">H tarifa</span><span class="font-bold text-green-600 uppercase">Igényelhető</span></div>
-                    <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Extra funkció</span><span class="font-bold text-right">Wi-Fi, 3D légáram</span></div>
+                    <div class="flex justify-between border-b border-gray-50 py-2"><span class="text-gray-500">Extra funkció</span><span class="font-bold">Wi-Fi, 3D légáram</span></div>
                 </div>
             </div>
         </div>
+
+        <div class="bg-white p-6 md:p-10 rounded-3xl shadow-lg border border-gray-100">
+            <h3 class="text-2xl font-black text-gray-900 mb-8 uppercase tracking-tight flex items-center">
+                <i class="fas fa-tools text-orange-500 mr-4"></i> Szerelési információk
+            </h3>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-4 text-lg">Mi tartozik az alapszerelésbe?</h4>
+                    <ul class="space-y-3 text-gray-600 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check text-orange-500 mt-1 mr-3"></i> Kiszállás és a készülék helyszínre szállítása</li>
+                        <li class="flex items-start"><i class="fas fa-check text-orange-500 mt-1 mr-3"></i> Alapanyag szükséglet 3 méteres csőszakaszig (vegytiszta hűtőközeg csövek, szigetelés, kábelek, kondenzvíz cső)</li>
+                        <li class="flex items-start"><i class="fas fa-check text-orange-500 mt-1 mr-3"></i> 450 mm-es kültéri tartókonzol és rögzítő elemek</li>
+                        <li class="flex items-start"><i class="fas fa-check text-orange-500 mt-1 mr-3"></i> 1 db faláttörés normál falszerkezetbe (tégla)</li>
+                        <li class="flex items-start"><i class="fas fa-check text-orange-500 mt-1 mr-3"></i> Kültéri és beltéri egység felszerelése, vákuumozás</li>
+                        <li class="flex items-start"><i class="fas fa-check text-orange-500 mt-1 mr-3"></i> Elektromos betáp kiépítése aljzatba max. 5 méterig</li>
+                        <li class="flex items-start"><i class="fas fa-check text-orange-500 mt-1 mr-3"></i> Készülék tesztelése, átadása és takarítás</li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col justify-center">
+                    <div class="bg-orange-50 border-l-4 border-orange-500 p-6 rounded-r-2xl mb-6">
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            A 3 métert meghaladó telepítés esetén minden megkezdett méter <span class="font-bold text-orange-600">10.000 Ft</span>, mely minden szükséges anyagot és munkadíjat tartalmaz.
+                        </p>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-2xl text-white">
+                        <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Segítségre van szüksége?</p>
+                        <p class="text-sm mb-4">Egyedi igény vagy különleges falszerkezet esetén vegye fel velünk a kapcsolatot!</p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="tel:+36305317007" class="text-orange-400 font-bold hover:text-orange-300 transition underline">+36 30 531 7007</a>
+                            <a href="mailto:info@klimafox.hu" class="text-orange-400 font-bold hover:text-orange-300 transition underline">info@klimafox.hu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
+
+    <footer class="py-10 text-center text-gray-400 text-xs uppercase tracking-widest">
+        &copy; 2024 KlímaFox - Minden jog fenntartva.
+    </footer>
 
     <script>
         function changeImage(src, element) {
