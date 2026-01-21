@@ -1,9 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <!-- Meta Pixel Code -->
-<script>
+    <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -18,9 +16,7 @@
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1544076400141318&ev=PageView&noscript=1"
     /></noscript>
-    <!-- End Meta Pixel Code -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M1KCZJD0VS"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M1KCZJD0VS"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -118,8 +114,7 @@
         }
     </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Navigation -->
+<body class="bg-gray-50 flex flex-col min-h-screen">
     <nav class="bg-white shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
@@ -155,319 +150,257 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="relative pt-20 min-h-screen">
-        <!-- Carousel Background -->
-        <div class="absolute inset-0 carousel-container">
-            <div class="carousel-slides">
-                <div class="carousel-slide" style="background-image: url('assets/slide1.jpg')"></div>
-                <div class="carousel-slide" style="background-image: url('assets/slide2.jpg')"></div>
-                <div class="carousel-slide" style="background-image: url('assets/slide3.jpg')"></div>
-                <div class="carousel-slide" style="background-image: url('assets/slide4.jpg')"></div>
-                <div class="carousel-slide" style="background-image: url('assets/slide5.jpg')"></div>
-            </div>
-            
-            <!-- Carousel Navigation -->
-            <button class="carousel-arrow prev">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="carousel-arrow next">
-                <i class="fas fa-chevron-right"></i>
-            </button>
-            
-            <!-- Carousel Dots -->
-            <div class="carousel-nav">
-                <div class="carousel-dot active"></div>
-                <div class="carousel-dot"></div>
-                <div class="carousel-dot"></div>
-                <div class="carousel-dot"></div>
-                <div class="carousel-dot"></div>
-            </div>
-        </div>
-        
-        <!-- Gradient Overlay -->
-        <div class="absolute inset-0 bg-gradient-to-r from-light-blue-500 to-orange-500 opacity-50"></div>
-        
-        <!-- Content -->
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 min-h-screen flex items-center">
-            <div class="text-center w-full">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white" style="text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);">
-                    Professzionális<br>
-                    <span class="text-orange-200">Légkondicionálás</span>
-                </h1>
-                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-white" style="text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);">
-                    Légkondicionáló telepítés, karbantartás és javítás<br>
-                    Rövid határidő, szakszerű munkavégzés, több éves tapasztalat
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#contact" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 shadow-lg text-center">
-                        Ingyenes Árajánlat
-                    </a>
-                    <a href="tel:+36303490346" class="bg-white bg-opacity-60 backdrop-blur-sm border-2 border-white hover:bg-white hover:bg-opacity-100 hover:text-light-blue-600 text-light-blue-800 font-bold py-3 px-8 rounded-lg transition duration-300 shadow-lg">
-                        <i class="fas fa-phone mr-2"></i>
-                        Hívj Most!
-                    </a>
+    <main class="flex-grow">
+        <section id="home" class="relative pt-20 min-h-screen">
+            <div class="absolute inset-0 carousel-container">
+                <div class="carousel-slides">
+                    <div class="carousel-slide" style="background-image: url('assets/slide1.jpg')"></div>
+                    <div class="carousel-slide" style="background-image: url('assets/slide2.jpg')"></div>
+                    <div class="carousel-slide" style="background-image: url('assets/slide3.jpg')"></div>
+                    <div class="carousel-slide" style="background-image: url('assets/slide4.jpg')"></div>
+                    <div class="carousel-slide" style="background-image: url('assets/slide5.jpg')"></div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Szolgáltatásaink</h2>
-                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
-                    Komplett légkondicionálás megoldások otthonába és irodájába
-                </p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-tools text-orange-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Légkondicionáló Telepítés</h3>
-                    <p class="text-gray-600">Professzionális légkondicionáló telepítés és klíma szerelés minden típusú ingatlanra Budapest és Pest megyében. Rövid határidő, szakszerű munkavégzés, megbízható szolgáltatás.</p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="w-16 h-16 bg-light-blue-100 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-wrench text-light-blue-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Légkondicionáló Karbantartás</h3>
-                    <p class="text-gray-600">Rendszeres légkondicionáló karbantartás és klíma tisztítás a berendezések optimális működéséért és hosszú élettartamáért.</p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-cog text-orange-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Légkondicionáló Javítás</h3>
-                    <p class="text-gray-600">Gyors légkondicionáló javítás és klíma hibaelhárítás minden márkára (Gree, Polar, Midea, Vivax, TCL, Daikin, Toshiba, LG, Samsung, Nord). Rövid határidő, szakszerű munkavégzés.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="offers" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Ajánlataink</h2>
-                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <a href="gree-comfort-pro.html" class="group block overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border border-gray-100">
-                    <div class="relative aspect-[940/788] overflow-hidden bg-gray-100">
-                        <img src="assets/Gree_comfort_pro_3_5kw.jpg" alt="Gree Comfort Pro 3,5kw" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-black/80 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 right-0 p-6 text-center">
-                            <h3 class="text-white font-bold text-xl drop-shadow-md">Gree Comfort Pro 3,5kw</h3>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="gree-winter.html" class="group block overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border border-gray-100">
-                    <div class="relative aspect-[940/788] overflow-hidden bg-gray-100">
-                        <img src="assets/Gree_winter_3_5kw.jpg" alt="Gree Winter 3,5 kw" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-black/80 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 right-0 p-6 text-center">
-                            <h3 class="text-white font-bold text-xl drop-shadow-md">Gree Winter 3,5 kw</h3>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="tcl-breezin-plus.html" class="group block overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border border-gray-100">
-                    <div class="relative aspect-[940/788] overflow-hidden bg-gray-100">
-                        <img src="assets/TCL_Breezing_plus_3_5kw.jpg" alt="TCL Breezin Plus 3,5 kw" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-black/80 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 right-0 p-6 text-center">
-                            <h3 class="text-white font-bold text-xl drop-shadow-md">TCL Breezin Plus 3,5 kw</h3>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="tcl-breezin.html" class="group block overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border border-gray-100">
-                    <div class="relative aspect-[940/788] overflow-hidden bg-gray-100">
-                        <img src="assets/TCL_Breezein_3_5kw.jpg" alt="TCL Breezin 3,5 kw" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-black/80 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 right-0 p-6 text-center">
-                            <h3 class="text-white font-bold text-xl drop-shadow-md">TCL Breezin 3,5 kw</h3>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="tesla-superior.html" class="group block overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border border-gray-100">
-                    <div class="relative aspect-[940/788] overflow-hidden bg-gray-100">
-                        <img src="assets/Tesla_superior_3_5_kw.jpg" alt="Tesla Superior 3,5 kw" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-black/80 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 right-0 p-6 text-center">
-                            <h3 class="text-white font-bold text-xl drop-shadow-md">Tesla Superior 3,5 kw</h3>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="tesla-select.html" class="group block overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border border-gray-100">
-                    <div class="relative aspect-[940/788] overflow-hidden bg-gray-100">
-                        <img src="assets/Tesla_select_3_5kw.jpg" alt="Tesla Select 3,5 kw" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-black/80 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 right-0 p-6 text-center">
-                            <h3 class="text-white font-bold text-xl drop-shadow-md">Tesla Select 3,5 kw</h3>
-                        </div>
-                    </div>
-                </a>
-
-            </div>
-        </div>
-    </section>
-    <!-- Why Choose Us Section -->
-    <section class="bg-light-blue-50 py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Miért válassz minket?</h2>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-medal text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Több Éves Tapasztalat</h3>
-                    <p class="text-gray-600">Több éves tapasztalattal dolgozunk a szakmában</p>
-                </div>
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-light-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-clock text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Rövid Határidő</h3>
-                    <p class="text-gray-600">24 órán belül kiszállunk, gyors munkavégzés</p>
-                </div>
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-shield-alt text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Garancia</h3>
-                    <p class="text-gray-600">2+ év garancia minden munkára</p>
-                </div>
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-light-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-heart text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Elégedett Ügyfelek</h3>
-                    <p class="text-gray-600">50+ elégedett ügyfél</p>
+                <button class="carousel-arrow prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-arrow next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <div class="carousel-nav">
+                    <div class="carousel-dot active"></div>
+                    <div class="carousel-dot"></div>
+                    <div class="carousel-dot"></div>
+                    <div class="carousel-dot"></div>
+                    <div class="carousel-dot"></div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Rólunk</h2>
-                    <p class="text-gray-600 text-lg mb-6">
-                        A KlímaFox.hu csapata több éves tapasztalattal foglalkozik légkondicionálók telepítésével,
-                        karbantartásával és javításával Budapest minden kerületében és Pest megye területén.
-                        Szakértő csapatunk mindig a legmodernebb technológiákkal és eszközökkel dolgozik, rövid határidővel és szakszerű munkavégzéssel.
+            
+            <div class="absolute inset-0 bg-gradient-to-r from-light-blue-500 to-orange-500 opacity-50"></div>
+            
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 min-h-screen flex items-center">
+                <div class="text-center w-full">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white" style="text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);">
+                        Professzionális<br>
+                        <span class="text-orange-200">Légkondicionálás</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-white" style="text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);">
+                        Légkondicionáló telepítés, karbantartás és javítás<br>
+                        Rövid határidő, szakszerű munkavégzés, több éves tapasztalat
                     </p>
-                    <p class="text-gray-600 text-lg mb-6">
-                        Célunk, hogy ügyfeleink számára a lehető legkomfortosabb klímát biztosítsuk
-                        otthonukban és munkahelyükön. Szolgáltatásaink között szerepel a légkondicionáló telepítés,
-                        klíma szerelés, légkondicionáló javítás, karbantartás és tisztítás.
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="#contact" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 shadow-lg text-center">
+                            Ingyenes Árajánlat
+                        </a>
+                        <a href="tel:+36303490346" class="bg-white bg-opacity-60 backdrop-blur-sm border-2 border-white hover:bg-white hover:bg-opacity-100 hover:text-light-blue-600 text-light-blue-800 font-bold py-3 px-8 rounded-lg transition duration-300 shadow-lg">
+                            <i class="fas fa-phone mr-2"></i>
+                            Hívj Most!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Szolgáltatásaink</h2>
+                    <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                        Komplett légkondicionálás megoldások otthonába és irodájába
                     </p>
-                    <div class="flex flex-wrap gap-4">
-                        <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">Gree</span>
-                        <span class="bg-light-blue-100 text-light-blue-800 px-3 py-1 rounded-full text-sm font-medium">Polar</span>
-                        <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">Midea</span>
-                        <span class="bg-light-blue-100 text-light-blue-800 px-3 py-1 rounded-full text-sm font-medium">Vivax</span>
-                        <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">TCL</span>
-                        <span class="bg-light-blue-100 text-light-blue-800 px-3 py-1 rounded-full text-sm font-medium">Daikin</span>
-                        <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">Toshiba</span>
-                        <span class="bg-light-blue-100 text-light-blue-800 px-3 py-1 rounded-full text-sm font-medium">LG</span>
-                        <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">Samsung</span>
-                        <span class="bg-light-blue-100 text-light-blue-800 px-3 py-1 rounded-full text-sm font-medium">Nord</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-tools text-orange-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Légkondicionáló Telepítés</h3>
+                        <p class="text-gray-600">Professzionális légkondicionáló telepítés és klíma szerelés minden típusú ingatlanra Budapest és Pest megyében. Rövid határidő, szakszerű munkavégzés, megbízható szolgáltatás.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="w-16 h-16 bg-light-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-wrench text-light-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Légkondicionáló Karbantartás</h3>
+                        <p class="text-gray-600">Rendszeres légkondicionáló karbantartás és klíma tisztítás a berendezések optimális működéséért és hosszú élettartamáért.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-cog text-orange-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Légkondicionáló Javítás</h3>
+                        <p class="text-gray-600">Gyors légkondicionáló javítás és klíma hibaelhárítás minden márkára (Gree, Polar, Midea, Vivax, TCL, Daikin, Toshiba, LG, Samsung, Nord). Rövid határidő, szakszerű munkavégzés.</p>
                     </div>
                 </div>
-                <div class="bg-gradient-to-r from-orange-500 to-light-blue-500 p-8 rounded-lg text-white">
-                    <h3 class="text-2xl font-bold mb-4">Szolgáltatási területeink</h3>
-                    <ul class="space-y-2">
-                        <li class="flex items-center"><i class="fas fa-check mr-2"></i> Budapest minden kerülete (I-XXIII.)</li>
-                        <li class="flex items-center"><i class="fas fa-check mr-2"></i> Dunaharaszti, Taksony, Csepel</li>
-                        <li class="flex items-center"><i class="fas fa-check mr-2"></i> Szigetszentmiklós, Szigethalom</li>
-                        <li class="flex items-center"><i class="fas fa-check mr-2"></i> Halásztelek, Bugyi, Dabas</li>
-                        <li class="flex items-center"><i class="fas fa-check mr-2"></i> Dömsöd, Alsónémedi, Soroksár</li>
-                        <li class="flex items-center"><i class="fas fa-check mr-2"></i> Pesterzsébet, Kiskunlacháza, Ráckeve</li>
-                    </ul>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="bg-gray-900 text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Kapcsolat</h2>
-                <p class="text-gray-400 text-lg">Vegye fel velünk a kapcsolatot ingyenes árajánlatért!</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-phone text-white text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Telefon</h3>
-                    <p class="text-gray-400"><a href="tel:06305317007" class="hover:text-orange-400 transition duration-300">+36305317007</a></p>
+        <section id="offers" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Ajánlataink</h2>
                 </div>
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-light-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-envelope text-white text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Email</h3>
-  <p class="text-gray-400"><a href="mailto:info@klimafox.hu" class="hover:text-orange-400 transition duration-300">info@klimafox.hu</a></p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <a href="gree-comfort-pro.html" class="group block overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border border-gray-100">
+                        <div class="relative aspect-[940/788] overflow-hidden bg-gray-100">
+                            <img src="assets/Gree_comfort_pro_3_5kw.jpg" alt="Gree Comfort Pro 3,5kw" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <div class="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-6 text-center">
+                                <h3 class="text-white font-bold text-xl drop-shadow-md">Gree Comfort Pro 3,5kw</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="gree-winter.html" class="group block overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border border-gray-100">
+                        <div class="relative aspect-[940/788] overflow-hidden bg-gray-100">
+                            <img src="assets/Gree_winter_3_5kw.jpg" alt="Gree Winter 3,5 kw" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <div class="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-6 text-center">
+                                <h3 class="text-white font-bold text-xl drop-shadow-md">Gree Winter 3,5 kw</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="tcl-breezin-plus.html" class="group block overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border border-gray-100">
+                        <div class="relative aspect-[940/788] overflow-hidden bg-gray-100">
+                            <img src="assets/TCL_Breezing_plus_3_5kw.jpg" alt="TCL Breezin Plus 3,5 kw" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <div class="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-6 text-center">
+                                <h3 class="text-white font-bold text-xl drop-shadow-md">TCL Breezin Plus 3,5 kw</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="tcl-breezin.html" class="group block overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border border-gray-100">
+                        <div class="relative aspect-[940/788] overflow-hidden bg-gray-100">
+                            <img src="assets/TCL_Breezein_3_5kw.jpg" alt="TCL Breezin 3,5 kw" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <div class="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-6 text-center">
+                                <h3 class="text-white font-bold text-xl drop-shadow-md">TCL Breezin 3,5 kw</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="tesla-superior.html" class="group block overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border border-gray-100">
+                        <div class="relative aspect-[940/788] overflow-hidden bg-gray-100">
+                            <img src="assets/Tesla_superior_3_5_kw.jpg" alt="Tesla Superior 3,5 kw" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <div class="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-6 text-center">
+                                <h3 class="text-white font-bold text-xl drop-shadow-md">Tesla Superior 3,5 kw</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="tesla-select.html" class="group block overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border border-gray-100">
+                        <div class="relative aspect-[940/788] overflow-hidden bg-gray-100">
+                            <img src="assets/Tesla_select_3_5kw.jpg" alt="Tesla Select 3,5 kw" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <div class="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-6 text-center">
+                                <h3 class="text-white font-bold text-xl drop-shadow-md">Tesla Select 3,5 kw</h3>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-<!--                <div class="text-center">-->
-<!--                    <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">-->
-<!--                        <i class="fas fa-map-marker-alt text-white text-xl"></i>-->
-<!--                    </div>-->
-<!--                    <h3 class="text-xl font-bold mb-2">Címünk</h3>-->
-<!--                    <p class="text-gray-400"></p>-->
-<!--                    <p class="text-gray-400">Példa utca 12.</p>-->
-<!--                </div>-->
             </div>
-<!--            <div class="mt-16 max-w-2xl mx-auto">-->
-<!--                <form class="bg-white p-8 rounded-lg">-->
-<!--                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">-->
-<!--                        <div>-->
-<!--                            <label class="block text-gray-700 text-sm font-bold mb-2">Név</label>-->
-<!--                            <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" required>-->
-<!--                        </div>-->
-<!--                        <div>-->
-<!--                            <label class="block text-gray-700 text-sm font-bold mb-2">Telefon</label>-->
-<!--                            <input type="tel" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" required>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="mb-6">-->
-<!--                        <label class="block text-gray-700 text-sm font-bold mb-2">Email</label>-->
-<!--                        <input type="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" required>-->
-<!--                    </div>-->
-<!--                    <div class="mb-6">-->
-<!--                        <label class="block text-gray-700 text-sm font-bold mb-2">Üzenet</label>-->
-<!--                        <textarea rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" required></textarea>-->
-<!--                    </div>-->
-<!--                    <button type="submit" class="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-4 rounded-md transition duration-300">-->
-<!--                        Árajánlat Kérése-->
-<!--                    </button>-->
-<!--                </form>-->
-<!--            </div>-->
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <section class="bg-light-blue-50 py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Miért válassz minket?</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-medal text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Több Éves Tapasztalat</h3>
+                        <p class="text-gray-600">Több éves tapasztalattal dolgozunk a szakmában</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-light-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-clock text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Rövid Határidő</h3>
+                        <p class="text-gray-600">24 órán belül kiszállunk, gyors munkavégzés</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-shield-alt text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Garancia</h3>
+                        <p class="text-gray-600">2+ év garancia minden munkára</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-light-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-heart text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Elégedett Ügyfelek</h3>
+                        <p class="text-gray-600">50+ elégedett ügyfél</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Rólunk</h2>
+                        <p class="text-gray-600 text-lg mb-6">
+                            A KlímaFox.hu csapata több éves tapasztalattal foglalkozik légkondicionálók telepítésével,
+                            karbantartásával és javításával Budapest minden kerületében és Pest megye területén.
+                        </p>
+                        <p class="text-gray-600 text-lg mb-6">
+                            Célunk, hogy ügyfeleink számára a lehető legkomfortosabb klímát biztosítsuk.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">Gree</span>
+                            <span class="bg-light-blue-100 text-light-blue-800 px-3 py-1 rounded-full text-sm font-medium">Polar</span>
+                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">Midea</span>
+                            <span class="bg-light-blue-100 text-light-blue-800 px-3 py-1 rounded-full text-sm font-medium">Vivax</span>
+                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">TCL</span>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-r from-orange-500 to-light-blue-500 p-8 rounded-lg text-white">
+                        <h3 class="text-2xl font-bold mb-4">Szolgáltatási területeink</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check mr-2"></i> Budapest minden kerülete</li>
+                            <li class="flex items-center"><i class="fas fa-check mr-2"></i> Dunaharaszti, Taksony, Csepel</li>
+                            <li class="flex items-center"><i class="fas fa-check mr-2"></i> Szigetszentmiklós, Szigethalom</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-gray-900 text-white py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Kapcsolat</h2>
+                    <p class="text-gray-400 text-lg">Vegye fel velünk a kapcsolatot ingyenes árajánlatért!</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-phone text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Telefon</h3>
+                        <p class="text-gray-400"><a href="tel:06305317007" class="hover:text-orange-400 transition duration-300">+36305317007</a></p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-light-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-envelope text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Email</h3>
+                        <p class="text-gray-400"><a href="mailto:info@klimafox.hu" class="hover:text-orange-400 transition duration-300">info@klimafox.hu</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="bg-gray-300 text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="flex items-center mb-4 md:mb-0">
                     <img src="assets/logo.png" alt="KlímaFox Logo" class="h-8 w-auto">
-<!--                    <span class="ml-2 text-lg font-bold">KlímaFox.hu</span>-->
                 </div>
                 <div class="text-center md:text-right">
                     <p class="text-black">&copy; <span id="current-year"></span> KlímaFox.hu. Minden jog fenntartva.</p>
@@ -476,15 +409,14 @@
         </div>
     </footer>
 
-    <!-- Cookie Consent Banner -->
     <div id="cookieBanner" class="cookie-banner">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center justify-between gap-4">
                 <div class="flex-1">
                     <p class="text-sm">
-                        Ez a weboldal sütiket használ a jobb felhasználói élmény érdekében és weboldalunk látogatottságának mérésére. 
+                        Ez a weboldal sütiket használ a jobb felhasználói élmény érdekében. 
                         <button id="showCookiePolicy" class="underline hover:text-orange-400 transition duration-300">
-                            További információ a sütikről
+                            További információ
                         </button>
                     </p>
                 </div>
@@ -500,197 +432,24 @@
         </div>
     </div>
 
-    <!-- Cookie Policy Modal -->
     <div id="cookiePolicyModal" class="modal">
         <div class="modal-content">
             <span class="close" id="closeCookieModal">&times;</span>
             <h2 class="text-2xl font-bold text-gray-900 mb-4">Süti Szabályzat</h2>
-            
             <h3 class="text-lg font-semibold text-gray-900 mb-2">Mi az a süti?</h3>
             <p class="text-gray-600 mb-4">
-                A sütik (cookies) kis szöveges fájlok, amelyeket a weboldal az Ön böngészőjében tárol. 
-                Ezek segítenek nekünk a weboldal működésének javításában és a látogatói élmény személyre szabásában.
+                A sütik (cookies) kis szöveges fájlok, amelyeket a weboldal az Ön böngészőjében tárol.
             </p>
-
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">Milyen sütiket használunk?</h3>
-            
-            <h4 class="font-semibold text-gray-800 mb-1">Analitikai sütik</h4>
-            <p class="text-gray-600 mb-3">
-                Matomo Analytics segítségével mérjük weboldalunk látogatottságát és használatát. 
-                Ezek a sütik névtelen statisztikákat gyűjtenek arról, hogy a látogatók hogyan használják weboldalunkat.
-            </p>
-
-            <h4 class="font-semibold text-gray-800 mb-1">Funkcionális sütik</h4>
-            <p class="text-gray-600 mb-4">
-                Ezek a sütik tárolják az Ön süti preferenciáit, hogy ne kelljen minden látogatáskor újra eldöntenie.
-            </p>
-
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">Hogyan kezeljük az adatokat?</h3>
-            <p class="text-gray-600 mb-4">
-                Az analitikai adatokat saját szerverünkön tároljuk, nem osztjuk meg harmadik felekkel. 
-                Az adatok névtelenek és csak statisztikai célokra használjuk őket.
-            </p>
-
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">Süti beállítások módosítása</h3>
-            <p class="text-gray-600 mb-4">
-                Bármikor módosíthatja süti beállításait böngészője beállításaiban, vagy törölheti a már tárolt sütiket.
-            </p>
-
-            <div class="flex gap-2 mt-6">
-                <button id="acceptCookiesModal" class="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded font-medium transition duration-300">
-                    Elfogadom
-                </button>
-                <button id="rejectCookiesModal" class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded font-medium transition duration-300">
-                    Elutasítom
-                </button>
-            </div>
         </div>
     </div>
 
     <script>
-        // Cookie consent management
-        const COOKIE_CONSENT_KEY = 'klimafox_cookie_consent';
-        
-        function getCookieConsent() {
-            return localStorage.getItem(COOKIE_CONSENT_KEY);
-        }
-        
-        function setCookieConsent(consent) {
-            localStorage.setItem(COOKIE_CONSENT_KEY, consent);
-        }
-        
-        function loadMatomo() {
-            const consent = getCookieConsent();
-            if (consent !== 'rejected') {
-                // Matomo tracking code - enabled by default unless explicitly rejected
-                var _paq = window._paq = window._paq || [];
-                _paq.push(['trackPageView']);
-                _paq.push(['enableLinkTracking']);
-                (function() {
-                    var u="//analytics.valq.hu/";
-                    _paq.push(['setTrackerUrl', u+'matomo.php']);
-                    _paq.push(['setSiteId', '8']);
-                    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-                    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-                })();
-            }
-        }
-        
-        function showCookieBanner() {
-            const banner = document.getElementById('cookieBanner');
-            banner.classList.add('show');
-        }
-        
-        function hideCookieBanner() {
-            const banner = document.getElementById('cookieBanner');
-            banner.classList.remove('show');
-        }
-        
-        function acceptCookies() {
-            setCookieConsent('accepted');
-            hideCookieBanner();
-            loadMatomo();
-        }
-        
-        function rejectCookies() {
-            setCookieConsent('rejected');
-            hideCookieBanner();
-        }
-        
-        function showCookieModal() {
-            document.getElementById('cookiePolicyModal').style.display = 'block';
-        }
-        
-        function hideCookieModal() {
-            document.getElementById('cookiePolicyModal').style.display = 'none';
-        }
-        
-        // Initialize cookie consent
-        document.addEventListener('DOMContentLoaded', function() {
-            const consent = getCookieConsent();
-            
-            if (!consent) {
-                // Show banner if no consent decision has been made
-                showCookieBanner();
-                // Load Matomo by default (before user makes a choice)
-                loadMatomo();
-            } else {
-                // Load Matomo unless explicitly rejected
-                loadMatomo();
-            }
-            
-            // Event listeners
-            document.getElementById('acceptCookies').addEventListener('click', acceptCookies);
-            document.getElementById('rejectCookies').addEventListener('click', rejectCookies);
-            document.getElementById('showCookiePolicy').addEventListener('click', showCookieModal);
-            document.getElementById('closeCookieModal').addEventListener('click', hideCookieModal);
-            document.getElementById('acceptCookiesModal').addEventListener('click', function() {
-                acceptCookies();
-                hideCookieModal();
-            });
-            document.getElementById('rejectCookiesModal').addEventListener('click', function() {
-                rejectCookies();
-                hideCookieModal();
-            });
-            
-            // Close modal when clicking outside
-            window.addEventListener('click', function(event) {
-                const modal = document.getElementById('cookiePolicyModal');
-                if (event.target === modal) {
-                    hideCookieModal();
-                }
-            });
-        });
-
-        // Set current year in footer
+        // Mobil menü kezelése
+        document.getElementById('mobile-menu-button').onclick = function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        };
+        // Aktuális év beállítása
         document.getElementById('current-year').textContent = new Date().getFullYear();
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuButton.addEventListener('click', function() {
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        // Close mobile menu when clicking on a link
-        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-        mobileMenuLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-        
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
-            if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
-                mobileMenu.classList.add('hidden');
-            }
-        });
     </script>
-    <script src="assets/scripts.js"></script>
-    <script>
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        if (mobileMenuButton && mobileMenu) {
-            mobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-        }
-
-        // A többi kódod (ami a képen is van) jöhet ezután...
-    </script>
-    <script src="assets/scripts.js"></script>
 </body>
 </html>
