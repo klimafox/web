@@ -189,11 +189,91 @@
 
         <p><em>Jelen dokumentum a GDPR és az Infotv. alapján készült.</em></p>
     </main>
+</section>
 
-    <footer>
-        <p>&copy; 2026 KlímaFox - Kreisz Ádám. Minden jog fenntartva.</p>
-        <p>Telefon: 06305317007 | Email: info@klimafox.hu</p>
-    </footer>
+<section id="contact" class="bg-gray-900 text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Kapcsolat</h2>
+            <p class="text-gray-400 text-lg">Vegye fel velünk a kapcsolatot ingyenes árajánlatért!</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-phone text-white text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Telefon</h3>
+                <p class="text-gray-400"><a href="tel:06305317007" class="hover:text-orange-400 transition duration-300">+36305317007</a></p>
+            </div>
+            <div class="text-center">
+                <div class="w-16 h-16 bg-light-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-envelope text-white text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Email</h3>
+<p class="text-gray-400"><a href="mailto:info@klimafox.hu" class="hover:text-orange-400 transition duration-300">info@klimafox.hu</a></p>
+            </div>
+        </div>
+    </div>
+</section>
 
+<footer class="bg-gray-300 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="assets/logo.png" alt="KlímaFox Logo" class="h-8 w-auto">
+                <a href="adatvedelem.html" class="ml-4 text-xs bg-transparent border border-gray-500 text-gray-600 hover:bg-gray-400 hover:text-white px-2 py-1 rounded transition duration-300">
+                    Adatkezelési tájékoztató
+                </a>
+            </div>
+            <div class="text-center md:text-right">
+                <p class="text-black">&copy; <span id="current-year"></span> KlimaFox.hu. Minden jog fenntartva.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="cookieBanner" class="cookie-banner">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex-1">
+                <p class="text-sm">
+                    Ez a weboldal sütiket használ a jobb felhasználói élmény érdekében és weboldalunk látogatottságának mérésére. 
+                    <button id="showCookiePolicy" class="underline hover:text-orange-400 transition duration-300">
+                        További információ a sütikről
+                    </button>
+                </p>
+            </div>
+            <div class="flex gap-2">
+                <button id="acceptCookies" class="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded text-sm font-medium transition duration-300">
+                    Elfogadom
+                </button>
+                <button id="rejectCookies" class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded text-sm font-medium transition duration-300">
+                    Elutasítom
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="cookiePolicyModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeCookieModal">&times;</span>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Süti Szabályzat</h2>
+        
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Mi az a süti?</h3>
+        <p class="text-gray-600 mb-4">
+            A sütik (cookies) kis szöveges fájlok, amelyeket a weboldal az Ön böngészőjében tárol. 
+            Ezek segítenek nekünk a weboldal működésének javításában és a látogatói élmény személyre szabásában.
+        </p>
+
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Milyen sütiket használunk?</h3>
+        
+        <h4 class="font-semibold text-gray-800 mb-1">Analitikai sütik</h4>
+        <p class="text-gray-600 mb-3">
+            Matomo Analytics segítségével mérjük weboldalunk látogatottságát és használatát. 
+            Ezek a sütik névtelen statisztikákat gyűjtenek arról, hogy a látogatók hogyan használják weboldalunkat.
+        </p>
+    </div>
+</div>
 </body>
 </html>
