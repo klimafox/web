@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <!-- Meta Pixel Code -->
-<script>
+    <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -17,9 +16,7 @@
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1544076400141318&ev=PageView&noscript=1"
     /></noscript>
-    <!-- End Meta Pixel Code -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M1KCZJD0VS"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M1KCZJD0VS"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -231,6 +228,49 @@
 
         <div class="bg-white p-6 md:p-10 rounded-3xl shadow-lg border border-gray-100">
             <h3 class="text-2xl font-black text-gray-900 mb-8 uppercase tracking-tight flex items-center">
+                <i class="fas fa-camera-retro text-orange-500 mr-4"></i> Képek átadott munkáinkról
+            </h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                <div class="relative group overflow-hidden rounded-2xl bg-gray-100 aspect-square border border-gray-100 shadow-sm cursor-zoom-in">
+                    <img src="assets/gal1.jpg" onclick="openLightbox(this.src)" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all flex items-center justify-center">
+                        <i class="fas fa-search-plus text-white opacity-0 group-hover:opacity-100 text-2xl"></i>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl bg-gray-100 aspect-square border border-gray-100 shadow-sm cursor-zoom-in">
+                    <img src="assets/gal3.jpg" onclick="openLightbox(this.src)" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all flex items-center justify-center">
+                        <i class="fas fa-search-plus text-white opacity-0 group-hover:opacity-100 text-2xl"></i>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl bg-gray-100 aspect-square border border-gray-100 shadow-sm cursor-zoom-in">
+                    <img src="assets/gal2.jpg" onclick="openLightbox(this.src)" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all flex items-center justify-center">
+                        <i class="fas fa-search-plus text-white opacity-0 group-hover:opacity-100 text-2xl"></i>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl bg-gray-100 aspect-square border border-gray-100 shadow-sm cursor-zoom-in">
+                    <img src="assets/gal8.jpg" onclick="openLightbox(this.src)" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all flex items-center justify-center">
+                        <i class="fas fa-search-plus text-white opacity-0 group-hover:opacity-100 text-2xl"></i>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl bg-gray-100 aspect-square border border-gray-100 shadow-sm cursor-zoom-in">
+                    <img src="assets/gal13.jpg" onclick="openLightbox(this.src)" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all flex items-center justify-center">
+                        <i class="fas fa-search-plus text-white opacity-0 group-hover:opacity-100 text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-[100] hidden flex items-center justify-center p-4">
+            <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-4xl hover:text-orange-500 transition">&times;</button>
+            <img id="lightboxImg" src="" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl">
+        </div>
+
+        <div class="bg-white p-6 md:p-10 rounded-3xl shadow-lg border border-gray-100">
+            <h3 class="text-2xl font-black text-gray-900 mb-8 uppercase tracking-tight flex items-center">
                 <i class="fas fa-star text-orange-500 mr-4"></i> Vélemények a termékről
             </h3>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
@@ -289,6 +329,24 @@
             element.classList.remove('border-transparent');
             element.classList.add('border-orange-500');
         }
+
+        // Lightbox funkciók
+        function openLightbox(src) {
+            document.getElementById('lightboxImg').src = src;
+            document.getElementById('lightbox').classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Görgetés letiltása
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.add('hidden');
+            document.body.style.overflow = 'auto'; // Görgetés visszakapcsolása
+        }
+
+        // Bezárás Esc gombra vagy kívülre kattintásra
+        window.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeLightbox(); });
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if(e.target === document.getElementById('lightbox')) closeLightbox();
+        });
 
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
