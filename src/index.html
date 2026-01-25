@@ -17,48 +17,25 @@
     src="https://www.facebook.com/tr?id=1544076400141318&ev=PageView&noscript=1"
     /></noscript>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M1KCZJD0VS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-M1KCZJD0VS');
-</script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-M1KCZJD0VS');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KlímaFox.hu - Légkondicionáló Telepítés, Javítás, Karbantartás Budapest és Pest Megye</title>
-    <meta name="description" content="Professzionális légkondicionáló telepítés, javítás és karbantartás Budapest minden kerületében, Dunaharaszti, Taksony, Csepel, Szigetszentmiklós területén. Rövid határidő, szakszerű munkavégzés, több éves tapasztalat, 2+ year garancia.">
-    <meta name="keywords" content="légkondicionáló telepítés, légkondicionáló javítás, légkondicionáló karbantartás, légkondicionáló tisztítás, klíma szerelés, klíma javítás, rövid határidő, szakszerű munkavégzés, gyors kiszállás, Budapest, Dunaharaszti, Taksony, Csepel, Szigetszentmiklós, Szigethalom, Halásztelek, Bugyi, Dabas, Dömsöd, Alsónémedi, Soroksár, Pesterzsébet, Kiskunlacháza, Ráckeve, I. kerület, II. kerület, III. kerület, IV. kerület, V. kerület, VI. kerület, VII. kerület, VIII. kerület, IX. kerület, X. kerület, XI. kerület, XII. kerület, XIII. kerület, XIV. kerület, XV. kerület, XVI. kerület, XVII. kerület, XVIII. kerület, XIX. kerület, XX. kerület, XXI. kerület, XXII. kerület, XXIII. kerület, Gree, Polar, Midea, Vivax, TCL, Daikin, Toshiba, LG, Samsung, Nord, Mitsubishi">
+    <meta name="description" content="Professzionális légkondicionáló telepítés, javítás és karbantartás Budapest minden kerületében, Dunaharaszti, Taksony, Csepel, Szigetszentmiklós területén.">
+    <meta name="keywords" content="légkondicionáló telepítés, klíma szerelés, javítás, karbantartás, Budapest, Dunaharaszti, Taksony">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'orange': {
-                            50: '#fff7ed',
-                            100: '#ffedd5',
-                            200: '#fed7aa',
-                            300: '#fdba74',
-                            400: '#fb923c',
-                            500: '#f97316',
-                            600: '#ea580c',
-                            700: '#c2410c',
-                            800: '#9a3412',
-                            900: '#7c2d12',
-                        },
-                        'light-blue': {
-                            50: '#f0f9ff',
-                            100: '#e0f2fe',
-                            200: '#bae6fd',
-                            300: '#7dd3fc',
-                            400: '#38bdf8',
-                            500: '#0ea5e9',
-                            600: '#0284c7',
-                            700: '#0369a1',
-                            800: '#075985',
-                            900: '#0c4a6e',
-                        }
+                        'orange': { 50: '#fff7ed', 100: '#ffedd5', 200: '#fed7aa', 300: '#fdba74', 400: '#fb923c', 500: '#f97316', 600: '#ea580c', 700: '#c2410c', 800: '#9a3412', 900: '#7c2d12' },
+                        'light-blue': { 50: '#f0f9ff', 100: '#e0f2fe', 200: '#bae6fd', 300: '#7dd3fc', 400: '#38bdf8', 500: '#0ea5e9', 600: '#0284c7', 700: '#0369a1', 800: '#075985', 900: '#0c4a6e' }
                     }
                 }
             }
@@ -66,101 +43,29 @@
     </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        .cookie-banner {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.95);
-            color: white;
-            padding: 1rem;
-            z-index: 1000;
-            transform: translateY(100%);
-            transition: transform 0.3s ease-in-out;
-        }
-        .cookie-banner.show {
-            transform: translateY(0);
-        }
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1001;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-        .modal-content {
-            background-color: white;
-            margin: 5% auto;
-            padding: 2rem;
-            border-radius: 8px;
-            width: 90%;
-            max-width: 600px;
-            max-height: 80vh;
-            overflow-y: auto;
-        }
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .close:hover {
-            color: #000;
-        }
+        /* Sütik és Modális ablak */
+        .cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.95); color: white; padding: 1rem; z-index: 1000; transform: translateY(100%); transition: transform 0.3s ease-in-out; }
+        .cookie-banner.show { transform: translateY(0); }
+        .modal { display: none; position: fixed; z-index: 1001; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); }
+        .modal-content { background-color: white; margin: 5% auto; padding: 2rem; border-radius: 8px; width: 90%; max-width: 600px; max-height: 80vh; overflow-y: auto; }
+        .close { color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer; }
 
-        .carousel-container {
-            overflow: hidden;
-            position: absolute;
-            inset: 0;
-        }
-        .carousel-slides {
-            display: flex;
-            width: 100%;
-            height: 100%;
-            transition: transform 0.7s ease-in-out;
-        }
-        .carousel-slide {
-            min-width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-        }
-        .carousel-arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 30;
-            background: rgba(0,0,0,0.3);
-            color: white;
-            padding: 1rem;
-            border-radius: 50%;
-            margin: 0 1rem;
-            transition: background 0.3s;
-        }
-        .carousel-arrow:hover { background: rgba(0,0,0,0.6); }
-        .carousel-arrow.prev { left: 0; }
-        .carousel-arrow.next { right: 0; }
-        .carousel-nav {
-            position: absolute;
-            bottom: 2rem;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 30;
-            display: flex;
-            gap: 0.5rem;
-        }
-        .carousel-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.5);
-            cursor: pointer;
-        }
-        .carousel-dot.active { background: white; }
+        /* GÖRDÜLŐ KÉPSOR STÍLUSOK */
+        .carousel-container { position: absolute; inset: 0; overflow: hidden; z-index: 0; }
+        .carousel-slides { display: flex; width: 100%; height: 100%; transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+        .carousel-slide { min-width: 100%; height: 100%; background-size: cover; background-position: center; }
+        
+        /* FÉNY EFFEKT (GRADIENS) */
+        .carousel-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(14, 165, 233, 0.5), rgba(249, 115, 22, 0.5)); z-index: 5; }
+
+        /* NYILAK ÉS DOTOK */
+        .carousel-arrow { position: absolute; top: 50%; transform: translateY(-50%); z-index: 30; background: rgba(0,0,0,0.3); color: white; padding: 1.2rem; border-radius: 50%; transition: all 0.3s; }
+        .carousel-arrow:hover { background: rgba(249, 115, 22, 0.8); }
+        .carousel-arrow.prev { left: 1.5rem; }
+        .carousel-arrow.next { right: 1.5rem; }
+        .carousel-nav { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); z-index: 30; display: flex; gap: 0.75rem; }
+        .carousel-dot { width: 14px; height: 14px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; border: 2px solid transparent; transition: all 0.3s; }
+        .carousel-dot.active { background: #fff; border-color: #f97316; transform: scale(1.2); }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -168,34 +73,30 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <a href="index.html">
-                        <img src="assets/logo.png" alt="KlímaFox Logo" class="h-10 w-auto">
-                    </a>
+                    <a href="index.html"><img src="assets/logo.png" alt="KlímaFox Logo" class="h-10 w-auto"></a>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="index.html#home" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Kezdőlap</a>
-                        <a href="index.html#services" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Szolgáltatások</a>
-                        <a href="index.html#offers" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Ajánlataink</a>
+                        <a href="#home" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Kezdőlap</a>
+                        <a href="#services" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Szolgáltatások</a>
+                        <a href="#offers" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Ajánlataink</a>
                         <a href="gallery.html" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Galéria</a>
-                        <a href="index.html#about" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Rólunk</a>
-                        <a href="index.html#contact" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Kapcsolat</a>
+                        <a href="#about" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Rólunk</a>
+                        <a href="#contact" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Kapcsolat</a>
                     </div>
                 </div>
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-700 hover:text-orange-500 focus:outline-none focus:text-orange-500">
-                        <i class="fas fa-bars"></i>
-                    </button>
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-orange-500"><i class="fas fa-bars"></i></button>
                 </div>
             </div>
-            <div id="mobile-menu" class="md:hidden hidden">
-                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-                    <a href="index.html#home" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Kezdőlap</a>
-                    <a href="index.html#services" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Szolgáltatások</a>
-                    <a href="index.html#offers" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Ajánlataink</a>
+            <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#home" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Kezdőlap</a>
+                    <a href="#services" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Szolgáltatások</a>
+                    <a href="#offers" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Ajánlataink</a>
                     <a href="gallery.html" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Galéria</a>
-                    <a href="index.html#about" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Rólunk</a>
-                    <a href="index.html#contact" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Kapcsolat</a>
+                    <a href="#about" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Rólunk</a>
+                    <a href="#contact" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Kapcsolat</a>
                 </div>
             </div>
         </div>
@@ -203,6 +104,8 @@
 
     <section id="home" class="relative pt-20 min-h-screen">
         <div class="carousel-container">
+            <div class="carousel-overlay"></div>
+            
             <div class="carousel-slides" id="carouselSlides">
                 <div class="carousel-slide" style="background-image: url('assets/slide1.jpg')"></div>
                 <div class="carousel-slide" style="background-image: url('assets/slide2.jpg')"></div>
@@ -210,8 +113,10 @@
                 <div class="carousel-slide" style="background-image: url('assets/slide4.jpg')"></div>
                 <div class="carousel-slide" style="background-image: url('assets/slide5.jpg')"></div>
             </div>
+            
             <button class="carousel-arrow prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
             <button class="carousel-arrow next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            
             <div class="carousel-nav" id="carouselDots">
                 <div class="carousel-dot active"></div>
                 <div class="carousel-dot"></div>
@@ -220,44 +125,53 @@
                 <div class="carousel-dot"></div>
             </div>
         </div>
-        <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
+        
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 min-h-screen flex items-center">
             <div class="text-center w-full">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white" style="text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white" style="text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);">
                     Professzionális<br><span class="text-orange-200">Légkondicionálás</span>
                 </h1>
-                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-white" style="text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);">
-                    Légkondicionáló telepítés, karbantartás és javítás<br>Rövid határidő, szakszerű munkavégzés, több éves tapasztalat
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-white" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
+                    Légkondicionáló telepítés, karbantartás és javítás<br>Rövid határidő, szakszerű munkavégzés.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#contact" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 shadow-lg text-center">Ingyenes Árajánlat</a>
-                    <a href="tel:+36303490346" class="bg-white bg-opacity-60 backdrop-blur-sm border-2 border-white hover:bg-white hover:bg-opacity-100 hover:text-light-blue-600 text-light-blue-800 font-bold py-3 px-8 rounded-lg transition duration-300 shadow-lg flex items-center justify-center"><i class="fas fa-phone mr-2"></i>Hívj Most!</a>
-                    <a href="https://www.facebook.com/profile.php?id=61568553781927" target="_blank" class="bg-[#1877F2] hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 shadow-lg flex items-center justify-center"><i class="fab fa-facebook mr-2"></i>Facebook</a>
+                    <a href="#contact" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-lg transition shadow-lg">Ingyenes Árajánlat</a>
+                    <a href="tel:+36303490346" class="bg-white/60 backdrop-blur-sm border-2 border-white text-light-blue-900 font-bold py-3 px-8 rounded-lg transition shadow-lg flex items-center justify-center"><i class="fas fa-phone mr-2"></i>Hívj Most!</a>
+                    <a href="https://www.facebook.com/profile.php?id=61568553781927" target="_blank" class="bg-[#1877F2] hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition shadow-lg flex items-center justify-center"><i class="fab fa-facebook mr-2"></i>Facebook</a>
                 </div>
             </div>
         </div>
     </section>
 
     <script>
-        const slides = document.getElementById('carouselSlides');
+        const slideTrack = document.getElementById('carouselSlides');
         const dots = document.querySelectorAll('.carousel-dot');
         const prevBtn = document.getElementById('prevBtn');
         const nextBtn = document.getElementById('nextBtn');
-        let currentSlide = 0;
-        const totalSlides = dots.length;
+        let currentIdx = 0;
+        const total = dots.length;
 
-        function updateCarousel() {
-            slides.style.transform = `translateX(-${currentSlide * 100}%)`;
-            dots.forEach((dot, index) => dot.classList.toggle('active', index === currentSlide));
+        function move(idx) {
+            currentIdx = idx;
+            slideTrack.style.transform = `translateX(-${currentIdx * 100}%)`;
+            dots.forEach((d, i) => d.classList.toggle('active', i === currentIdx));
         }
 
-        function nextSlide() { currentSlide = (currentSlide + 1) % totalSlides; updateCarousel(); }
-        nextBtn.addEventListener('click', () => { nextSlide(); resetTimer(); });
-        prevBtn.addEventListener('click', () => { currentSlide = (currentSlide - 1 + totalSlides) % totalSlides; updateCarousel(); resetTimer(); });
-        dots.forEach((dot, index) => dot.addEventListener('click', () => { currentSlide = index; updateCarousel(); resetTimer(); }));
-        let timer = setInterval(nextSlide, 5000);
-        function resetTimer() { clearInterval(timer); timer = setInterval(nextSlide, 5000); }
-        document.getElementById('mobile-menu-button').addEventListener('click', () => document.getElementById('mobile-menu').classList.toggle('hidden'));
+        function next() { currentIdx = (currentIdx + 1) % total; move(currentIdx); }
+        function prev() { currentIdx = (currentIdx - 1 + total) % total; move(currentIdx); }
+
+        nextBtn.addEventListener('click', () => { next(); restart(); });
+        prevBtn.addEventListener('click', () => { prev(); restart(); });
+        dots.forEach((d, i) => d.addEventListener('click', () => { move(i); restart(); }));
+
+        let auto = setInterval(next, 5000);
+        function restart() { clearInterval(auto); auto = setInterval(next, 5000); }
+
+        // Mobil menü kapcsoló
+        document.getElementById('mobile-menu-button').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
     </script>
-</body>
+
+    </body>
 </html>
