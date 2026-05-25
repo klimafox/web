@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if full_title %}{{ full_title }}{% elif title %}{{ title }} - KlímaFox{% else %}KlímaFox.hu - Légkondicionáló Telepítés, Javítás, Karbantartás Budapest és Pest Megye{% endif %}</title>
+    {% if meta_description %}<meta name="description" content="{{ meta_description }}">{% endif %}
+    {% if meta_keywords %}<meta name="keywords" content="{{ meta_keywords }}">{% endif %}
+    {% if canonical %}<link rel="canonical" href="{{ canonical }}">{% endif %}
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'orange': {
+                            50: '#fff7ed', 100: '#ffedd5', 200: '#fed7aa', 300: '#fdba74',
+                            400: '#fb923c', 500: '#f97316', 600: '#ea580c', 700: '#c2410c',
+                            800: '#9a3412', 900: '#7c2d12',
+                        },
+                        'light-blue': {
+                            50: '#f0f9ff', 100: '#e0f2fe', 200: '#bae6fd', 300: '#7dd3fc',
+                            400: '#38bdf8', 500: '#0ea5e9', 600: '#0284c7', 700: '#0369a1',
+                            800: '#075985', 900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/styles.css" rel="stylesheet">
+    <style>
+        .cookie-banner {
+            position: fixed; bottom: 0; left: 0; right: 0;
+            background: rgba(0,0,0,0.95); color: white; padding: 1rem;
+            z-index: 1000; transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .cookie-banner.show { transform: translateY(0); }
+        .modal {
+            display: none; position: fixed; z-index: 1001;
+            left: 0; top: 0; width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .modal-content {
+            background-color: white; margin: 5% auto; padding: 2rem;
+            border-radius: 8px; width: 90%; max-width: 600px;
+            max-height: 80vh; overflow-y: auto;
+        }
+        .close { color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer; }
+        .close:hover { color: #000; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    {% include "partials/nav.njk" %}
+
+    {{ content | safe }}
+
+    {% include "partials/footer.njk" %}
+    {% include "partials/analytics.njk" %}
+    <script src="assets/scripts.js"></script>
+</body>
+</html>

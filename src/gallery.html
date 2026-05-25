@@ -1,102 +1,9 @@
-<!DOCTYPE html>
-<html lang="hu">
-<head>
-     <!-- Meta Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1544076400141318');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1544076400141318&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galéria - KlímaFox.hu - Légkondicionáló Telepítés Munkáink</title>
-    <meta name="description" content="Tekintse meg légkondicionáló telepítési munkáinkat Budapest és Pest megyében. Professzionális klíma szerelés, telepítés fotók és referenciák.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'orange': {
-                            50: '#fff7ed',
-                            100: '#ffedd5',
-                            200: '#fed7aa',
-                            300: '#fdba74',
-                            400: '#fb923c',
-                            500: '#f97316',
-                            600: '#ea580c',
-                            700: '#c2410c',
-                            800: '#9a3412',
-                            900: '#7c2d12',
-                        },
-                        'light-blue': {
-                            50: '#f0f9ff',
-                            100: '#e0f2fe',
-                            200: '#bae6fd',
-                            300: '#7dd3fc',
-                            400: '#38bdf8',
-                            500: '#0ea5e9',
-                            600: '#0284c7',
-                            700: '#0369a1',
-                            800: '#075985',
-                            900: '#0c4a6e',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="assets/styles.css" rel="stylesheet">
-</head>
-<body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <img src="assets/logo.png" alt="KlímaFox Logo" class="h-10 w-auto">
-                </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="index.html" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Kezdőlap</a>
-                        <a href="index.html#services" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Szolgáltatások</a>
-                        <a href="gallery.html" class="text-orange-600 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Galéria</a>
-                        <a href="index.html#about" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Rólunk</a>
-                        <a href="index.html#contact" class="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">Kapcsolat</a>
-                    </div>
-                </div>
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-700 hover:text-orange-500 focus:outline-none focus:text-orange-500">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-            </div>
-            <!-- Mobile menu -->
-            <div id="mobile-menu" class="md:hidden hidden">
-                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-                    <a href="index.html" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Kezdőlap</a>
-                    <a href="index.html#services" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Szolgáltatások</a>
-                    <a href="gallery.html" class="text-orange-600 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Galéria</a>
-                    <a href="index.html#about" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Rólunk</a>
-                    <a href="index.html#contact" class="text-gray-700 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Kapcsolat</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+---
+layout: layouts/page.njk
+title: Munkáink Galériája - KlímaFox
+permalink: gallery.html
+---
 
-    <!-- Header Section -->
     <section class="bg-gradient-to-r from-light-blue-500 to-orange-500 text-white pt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div class="text-center">
@@ -110,7 +17,6 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
     <section class="py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
@@ -119,49 +25,24 @@
                     Professzionális légkondicionáló telepítések és szerelések - kattintson a képekre a nagyobb megtekintéshez
                 </p>
             </div>
-            
+
             <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="assets/gal1.jpg" alt="Légkondicionáló telepítés - 1. kép" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/gal2.jpg" alt="Légkondicionáló telepítés - 2. kép" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/gal3.jpg" alt="Légkondicionáló telepítés - 3. kép" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/gal4.jpg" alt="Légkondicionáló telepítés - 4. kép" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/gal5.jpg" alt="Légkondicionáló telepítés - 5. kép" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/gal6.jpg" alt="Légkondicionáló telepítés - 6. kép" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/gal7.jpg" alt="Légkondicionáló telepítés - 7. kép" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/gal8.jpg" alt="Légkondicionáló telepítés - 8. kép" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/gal9.jpg" alt="Légkondicionáló telepítés - 9. kép" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/gal10.jpg" alt="Légkondicionáló telepítés - 10. kép" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/gal11.jpg" alt="Légkondicionáló telepítés - 11. kép" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/gal13.jpg" alt="Légkondicionáló telepítés - 12. kép" loading="lazy">
-                </div>
+                <div class="gallery-item"><img src="assets/gal1.jpg" alt="Légkondicionáló telepítés - 1. kép" loading="lazy"></div>
+                <div class="gallery-item"><img src="assets/gal2.jpg" alt="Légkondicionáló telepítés - 2. kép" loading="lazy"></div>
+                <div class="gallery-item"><img src="assets/gal3.jpg" alt="Légkondicionáló telepítés - 3. kép" loading="lazy"></div>
+                <div class="gallery-item"><img src="assets/gal4.jpg" alt="Légkondicionáló telepítés - 4. kép" loading="lazy"></div>
+                <div class="gallery-item"><img src="assets/gal5.jpg" alt="Légkondicionáló telepítés - 5. kép" loading="lazy"></div>
+                <div class="gallery-item"><img src="assets/gal6.jpg" alt="Légkondicionáló telepítés - 6. kép" loading="lazy"></div>
+                <div class="gallery-item"><img src="assets/gal7.jpg" alt="Légkondicionáló telepítés - 7. kép" loading="lazy"></div>
+                <div class="gallery-item"><img src="assets/gal8.jpg" alt="Légkondicionáló telepítés - 8. kép" loading="lazy"></div>
+                <div class="gallery-item"><img src="assets/gal9.jpg" alt="Légkondicionáló telepítés - 9. kép" loading="lazy"></div>
+                <div class="gallery-item"><img src="assets/gal10.jpg" alt="Légkondicionáló telepítés - 10. kép" loading="lazy"></div>
+                <div class="gallery-item"><img src="assets/gal11.jpg" alt="Légkondicionáló telepítés - 11. kép" loading="lazy"></div>
+                <div class="gallery-item"><img src="assets/gal13.jpg" alt="Légkondicionáló telepítés - 12. kép" loading="lazy"></div>
             </div>
         </div>
     </section>
 
-    <!-- Contact CTA Section -->
     <section class="bg-gradient-to-r from-orange-500 to-light-blue-500 text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">Tetszik amit lát?</h2>
@@ -169,58 +50,13 @@
                 Kérjen ingyenes árajánlatot légkondicionáló telepítésre vagy javításra!
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="index.html#contact" class="bg-white text-orange-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition duration-300">
+                <a href="/#contact" class="bg-white text-orange-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition duration-300">
                     Kapcsolat
                 </a>
-                <a href="tel:+36305317007" class="bg-transparent border-2 border-white hover:bg-white hover:text-light-blue-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+                <a href="tel:{{ site.phoneTel }}" class="bg-transparent border-2 border-white hover:bg-white hover:text-light-blue-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
                     <i class="fas fa-phone mr-2"></i>
-                    +36305317007
+                    {{ site.phone }}
                 </a>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-300 text-white py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="flex items-center mb-4 md:mb-0">
-                    <img src="assets/logo.png" alt="KlímaFox Logo" class="h-8 w-auto">
-                </div>
-                <div class="text-center md:text-right">
-                    <p class="text-black">&copy; <span id="current-year"></span> KlímaFox.hu. Minden jog fenntartva.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="assets/scripts.js"></script>
-    <script>
-        // Set current year in footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-        
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuButton.addEventListener('click', function() {
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        // Close mobile menu when clicking on a link
-        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-        mobileMenuLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-        
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
-            if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
-                mobileMenu.classList.add('hidden');
-            }
-        });
-    </script>
-</body>
-</html>

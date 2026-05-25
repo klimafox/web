@@ -1,0 +1,33 @@
+<div class="bg-white p-6 md:p-10 rounded-3xl shadow-lg border border-gray-100">
+    <h3 class="text-2xl font-black text-gray-900 mb-8 uppercase tracking-tight flex items-center">
+        <i class="fas fa-tools text-orange-500 mr-4"></i> Szerelési információk
+    </h3>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div>
+            <h4 class="font-bold text-gray-900 mb-4 text-lg">Mi tartozik az alapszerelésbe?</h4>
+            <ul class="space-y-3 text-gray-600 text-sm">
+                <li class="flex items-start"><i class="fas fa-check text-orange-500 mt-1 mr-3"></i> Kiszállás és a készülék helyszínre szállítása</li>
+                <li class="flex items-start"><i class="fas fa-check text-orange-500 mt-1 mr-3"></i> Szereléshez szükséges alapanyag szükséglet, 3 méteres csőszakaszig. (vegytiszta hűtőközeg csövek, szigetelés, kábelek, kondenzvíz cső, 450 mm-es kültéri tartókonzol, rögzítő elemek)</li>
+                <li class="flex items-start"><i class="fas fa-check text-orange-500 mt-1 mr-3"></i> Munkadíj: 1 db faláttörés normál falszerkezetbe (tégla)</li>
+                <li class="flex items-start"><i class="fas fa-check text-orange-500 mt-1 mr-3"></i> Kültéri és beltéri egység felszerelése, vákuumozás, elektromos betáp kiépítése aljzatba max. 5 méterig</li>
+                <li class="flex items-start"><i class="fas fa-check text-orange-500 mt-1 mr-3"></i> Készülék tesztelése, majd átadása és takarítás</li>
+                <li class="flex items-start"><i class="fas fa-check text-orange-500 mt-1 mr-3"></i> Árainkat a körülményekhez mérten felülvizsgálhatjuk.</li>
+            </ul>
+        </div>
+        <div class="flex flex-col justify-center">
+            <div class="bg-orange-50 border-l-4 border-orange-500 p-6 rounded-r-2xl mb-6 shadow-sm">
+                <p class="text-gray-700 text-sm leading-relaxed">
+                    A 3 métert meghaladó telepítés esetén minden megkezdett méter <span class="font-bold text-orange-600">10.000 Ft</span>, mely minden szükséges anyagot és munkadíjat tartalmaz.
+                </p>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl text-white shadow-xl">
+                <p class="text-xs uppercase tracking-widest text-gray-400 mb-2">Egyedi igénye van?</p>
+                <p class="text-sm mb-4">Vegye fel velünk a kapcsolatot emailben vagy telefonon!</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="tel:{{ site.phoneTel }}" class="text-orange-400 font-bold hover:text-orange-300 transition underline">{{ site.phone }}</a>
+                    <a href="mailto:{{ site.email }}" class="text-orange-400 font-bold hover:text-orange-300 transition underline">{{ site.email }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
