@@ -2,6 +2,8 @@
 layout: layouts/product.njk
 title: Tesla Select 3,5kW
 permalink: tesla-select.html
+card_image: Tesla_select_3_5kw.jpg
+sort_order: 6
 
 images:
   - teslasel1.png

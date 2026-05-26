@@ -2,6 +2,8 @@
 layout: layouts/product.njk
 title: TCL Breezein 3,5kW
 permalink: tcl-breezin.html
+card_image: TCL_Breezein_3_5kw.jpg
+sort_order: 4
 
 images:
   - brizin1.jpg

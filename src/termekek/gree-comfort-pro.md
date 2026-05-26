@@ -2,6 +2,8 @@
 layout: layouts/product.njk
 title: Gree Comfort Pro 3,5kW
 permalink: gree-comfort-pro.html
+card_image: Gree_comfort_pro_3_5kw.jpg
+sort_order: 1
 show_cta_banner: true
 
 images:

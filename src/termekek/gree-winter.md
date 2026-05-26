@@ -2,6 +2,8 @@
 layout: layouts/product.njk
 title: Gree Winter 3,5kW
 permalink: gree-winter.html
+card_image: Gree_winter_3_5kw.jpg
+sort_order: 2
 
 images:
   - winter1.png

@@ -2,6 +2,8 @@
 layout: layouts/product.njk
 title: Tesla Superior 3,5kW
 permalink: tesla-superior.html
+card_image: Tesla_superior_3_5_kw.jpg
+sort_order: 5
 
 images:
   - teslasup1.jpeg
